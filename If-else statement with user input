@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Math Grade: ");
+		float math = sc.nextFloat();
+		System.out.println("Enter Math Grade: ");
+		float science = sc.nextFloat();
+		System.out.println("Enter Math Grade: ");
+		float english = sc.nextFloat();
+		System.out.println("Enter Math Grade: ");
+		float filipino = sc.nextFloat();
+		
+		float avg = (math+science+english+filipino)/4;
+		System.out.println("Average is"+ avg);
+		
+		if (avg > 100) {
+			System.out.println("Invalid Grade");
+		}
+		else if (avg >= 98) {
+			System.out.println("With highest honors");
+		}
+			else if (avg >= 95) {
+			System.out.println("With high honors");
+		}
+			else if (avg >= 90) {
+			System.out.println("With honors");
+		}
+			else if (avg >= 75) {
+			System.out.println("Pass");
+		}
+		else {
+			System.out.println("Failed");
+		}
+	}
+}
