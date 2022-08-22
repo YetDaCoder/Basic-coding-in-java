@@ -1,0 +1,23 @@
+\\Array basic with user input
+
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String emails[] = {"royetteaustria@gmail.com","kirbyveloso@gmail.com","kennethveloso@gmail.com","rosseth@gmail.com","renz@gmail.com","johnell@gmail.com","lloid@gmail.com"};
+		String usernames[] = {"royette13","kirby11","kenneth23","rosseth03","renz11","johnell20","lloid20"};
+		String passwords[] = {"royettelangmalakas","kirbylangmalakas","kennethlangmalakas","rossethlangmalakas","renzlangmalakas","johnelllangmalakas","lloidlangmalakas"};
+		
+		int i;
+		
+		System.out.print("Enter index to show the email, password and usernames: ");
+		 i = sc.nextInt();
+		
+		System.out.println("Email:"        + emails[i]);
+		System.out.println("Password:  "+ passwords[i]);
+		System.out.print("Username:   "+ usernames[i]);
+		
+		
+	}
+}
